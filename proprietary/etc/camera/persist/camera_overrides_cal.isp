@@ -1,0 +1,10 @@
+ap15Function.lensShading = FALSE;
+
+ae.MeanAlg.SmartTarget = FALSE;
+ae.MeanAlg.TargetBrightness = 210;
+ae.MeanAlg.ConvergeSpeed = 0.9;
+ae.MaxFstopDeltaNeg = 0.9;
+ae.MaxFstopDeltaPos = 0.9;
+ae.MaxSearchFrameCount = 50;
+ae.MeanAlg.HigherTarget = 210; 
+ae.MeanAlg.LowerTarget = 210;

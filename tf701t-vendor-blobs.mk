@@ -40,7 +40,6 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/bin/pad_fw_update:system/bin/pad_fw_update \
     vendor/asus/tf701t/proprietary/bin/pad_gic_fw_update:system/bin/pad_gic_fw_update \
     vendor/asus/tf701t/proprietary/bin/powerservice:system/bin/powerservice \
-    vendor/asus/tf701t/proprietary/bin/python:system/bin/python \
     vendor/asus/tf701t/proprietary/bin/raydium_selftest:system/bin/raydium_selftest \
     vendor/asus/tf701t/proprietary/bin/rild:system/bin/rild \
     vendor/asus/tf701t/proprietary/bin/rm_ts_server:system/bin/rm_ts_server \
@@ -52,14 +51,6 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/bin/usdwatchdog:system/bin/usdwatchdog \
     vendor/asus/tf701t/proprietary/bin/widevine_install:system/bin/widevine_install \
     vendor/asus/tf701t/proprietary/bin/wifimacwriter:system/bin/wifimacwriter \
-    vendor/asus/tf701t/proprietary/etc/camera/data/bin-android/applylsc:system/etc/camera/data/bin-android/applylsc \
-    vendor/asus/tf701t/proprietary/etc/camera/data/bin-android/blobgenerator:system/etc/camera/data/bin-android/blobgenerator \
-    vendor/asus/tf701t/proprietary/etc/camera/data/bin-android/blobtester:system/etc/camera/data/bin-android/blobtester \
-    vendor/asus/tf701t/proprietary/etc/camera/data/bin-android/calibrate.py:system/etc/camera/data/bin-android/calibrate.py \
-    vendor/asus/tf701t/proprietary/etc/camera/data/bin-android/createafdata:system/etc/camera/data/bin-android/createafdata \
-    vendor/asus/tf701t/proprietary/etc/camera/data/bin-android/lsc:system/etc/camera/data/bin-android/lsc \
-    vendor/asus/tf701t/proprietary/etc/camera/data/bin-android/version.txt:system/etc/camera/data/bin-android/version.txt \
-    vendor/asus/tf701t/proprietary/etc/camera/data/calibrate_params.cfg:system/etc/camera/data/calibrate_params.cfg \
     vendor/asus/tf701t/proprietary/etc/camera/persist/camera_overrides_cal.isp:system/etc/camera/persist/camera_overrides_cal.isp \
     vendor/asus/tf701t/proprietary/etc/camera/persist/camera_overrides.isp:system/etc/camera/persist/camera_overrides.isp \
     vendor/asus/tf701t/proprietary/etc/firmware/battery_gauge/mozart_dock_0167.dffs:system/etc/firmware/battery_gauge/mozart_dock_0167.dffs \
@@ -185,7 +176,6 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/lib/libopencv24_tegra.so:system/lib/libopencv24_tegra.so \
     vendor/asus/tf701t/proprietary/lib/libpowerservice_client.so:system/lib/libpowerservice_client.so \
     vendor/asus/tf701t/proprietary/lib/libpowerservice.so:system/lib/libpowerservice.so \
-    vendor/asus/tf701t/proprietary/lib/libpython2.6.so:system/lib/libpython2.6.so \
     vendor/asus/tf701t/proprietary/lib/librm31080.so:system/lib/librm31080.so \
     vendor/asus/tf701t/proprietary/lib/librm_ts_service.so:system/lib/librm_ts_service.so \
     vendor/asus/tf701t/proprietary/lib/libsecure_hdcp_up.so:system/lib/libsecure_hdcp_up.so \
@@ -234,17 +224,6 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
     vendor/asus/tf701t/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
     vendor/asus/tf701t/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
-    vendor/asus/tf701t/proprietary/usr/share/nvcs/examples/nvcamera_capture_image.py:system/usr/share/nvcs/examples/nvcamera_capture_image.py \
-    vendor/asus/tf701t/proprietary/usr/share/nvcs/nvcamera_server.py:system/usr/share/nvcs/nvcamera_server.py \
-    vendor/asus/tf701t/proprietary/usr/share/nvcs/tests/nvcsflashtests.py:system/usr/share/nvcs/tests/nvcsflashtests.py \
-    vendor/asus/tf701t/proprietary/usr/share/nvcs/tests/nvcsfocusertests.py:system/usr/share/nvcs/tests/nvcsfocusertests.py \
-    vendor/asus/tf701t/proprietary/usr/share/nvcs/tests/nvcshostsensortests.py:system/usr/share/nvcs/tests/nvcshostsensortests.py \
-    vendor/asus/tf701t/proprietary/usr/share/nvcs/tests/nvcssensortests.py:system/usr/share/nvcs/tests/nvcssensortests.py \
-    vendor/asus/tf701t/proprietary/usr/share/nvcs/tests/nvcstestcore.py:system/usr/share/nvcs/tests/nvcstestcore.py \
-    vendor/asus/tf701t/proprietary/usr/share/nvcs/tests/nvcstestmain.py:system/usr/share/nvcs/tests/nvcstestmain.py \
-    vendor/asus/tf701t/proprietary/usr/share/nvcs/tests/nvcstest.py:system/usr/share/nvcs/tests/nvcstest.py \
-    vendor/asus/tf701t/proprietary/usr/share/nvcs/tests/nvcstestutils.py:system/usr/share/nvcs/tests/nvcstestutils.py \
-    vendor/asus/tf701t/proprietary/usr/share/nvcs/tests/README.txt:system/usr/share/nvcs/tests/README.txt \
     vendor/asus/tf701t/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/asus/tf701t/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/asus/tf701t/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \

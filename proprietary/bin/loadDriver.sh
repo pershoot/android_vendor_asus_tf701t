@@ -1,7 +1,5 @@
 #!/system/bin/sh
 
-insmod /system/lib/modules/cfg80211.ko
-
 mmc=mmc2
 device=$(cat /sys/bus/sdio/devices/$mmc:0001:1/device)
 
@@ -15,8 +13,8 @@ esac
 wifimacwriter /system/etc/nvram_$chip.txt
 
 case $device in
-0xa94d) insmod /system/lib/modules/bcmdhd.ko disable_proptx=1 bw_40all=1
+0xa94d) echo 1 > /sys/module/bcmdhd/parameters/disable_proptx; echo 1 > /sys/module/bcmdhd/parameters/bw_40all
         ;;
-*)      insmod /system/lib/modules/bcmdhd.ko
+*)
         ;;
 esac

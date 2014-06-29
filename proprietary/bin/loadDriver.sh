@@ -13,7 +13,7 @@ esac
 wifimacwriter /system/etc/nvram_$chip.txt
 
 case $device in
-0xa94d) echo 1 > /sys/module/bcmdhd/parameters/disable_proptx
+0xa94d) echo 1 > /sys/module/bcmdhd/parameters/disable_proptx; echo 1 > /sys/module/bcmdhd/parameters/bw_40all
         ;;
 *)
         ;;

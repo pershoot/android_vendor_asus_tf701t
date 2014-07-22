@@ -1,0 +1,89 @@
+#!/system/bin/sh
+#***********************************************************************************************
+#
+# Copyright (c) 2012-2013, NVIDIA CORPORATION.  All rights reserved.
+#
+#***********************************************************************************************
+
+log() {
+    /system/bin/log -p i -t FWDLD $1
+}
+
+#Get the path where modem firmware is stored in AP file system
+fw_path=$2
+log "Icera firmware update - firmware path: $fw_path"
+
+#Delete previous update log
+rm $fw_path/fw_download.log
+
+#Get the list of files to be downloaded to the modem
+files_list=$(ls $fw_path)
+do_download=0
+for file in $files_list
+do
+    log "Icera firmware update - file to download: $file"
+    if [ -n "${command}" ]; then
+	command=$command";$fw_path/$file"
+    else
+	command="$fw_path/$file"
+    fi;
+    do_download=1
+done
+if [ $do_download -eq 0 ]; then
+    log "Icera firmware update - Nothing to update"
+fi;
+
+#get the device path only if there is something to update and check it is valid
+if [ $do_download -eq 1 ]; then
+    dev_name=$1
+    #check that the device really exists
+    ls $dev_name
+    if [ $? -eq  0 ]; then
+        log "Icera firmware update - device name:   $dev_name"
+    else
+        #This script may have been started too early before the modem enumerates.
+        #let few time before trying again. If still not there cancel update
+        log "Icera firmware update - $dev_name not found waiting 10s before trying again"
+        sleep 30
+        ls $dev_name
+        if [ $? -eq  0 ]; then
+            log "Icera firmware update - $dev_name now available"
+        else
+            log "Icera firmware update - ERROR device $dev_name do not exists"
+            do_download=0
+        fi;
+    fi;
+fi;
+
+if [ $do_download -eq 1 ]; then
+    #Stop the RIL and CPO to not interfere with modem firwmare upgrade
+    stop icera-switcher
+    stop ril-daemon
+
+    #force switching to loader mode so that the tty is automatically flushed
+    #echo "AT%MODE=1\r\n" > $dev_name
+    #wait for the re-enumeration
+    sleep 2
+
+    #execute the downloader and store output
+    downloader -d $dev_name -f "$command" > $fw_path/fw_download.log
+
+    #get the return error core
+    err=$?
+    if [ $err -eq 0 ]; then
+        #update is sucessful
+        log "Icera firmware update - SUCCESS"
+        #files can be removed from AP file system
+        for file in $files_list
+        do
+            rm $fw_path/$file;
+        done
+    else
+        log "Icera firmware update - downloader ERROR";
+    fi;
+    log "Icera firmware update - log stored under $fw_path/fw_download.log"
+
+    #restart the RIL and CPO even if download failed. Modem will continue using previous firmware
+    start ril-daemon
+    start icera-switcher
+fi;

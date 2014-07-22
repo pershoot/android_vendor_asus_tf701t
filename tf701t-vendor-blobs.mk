@@ -21,13 +21,16 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/bin/cluster_get.sh:system/bin/cluster_get.sh \
     vendor/asus/tf701t/proprietary/bin/cluster_set.sh:system/bin/cluster_set.sh \
     vendor/asus/tf701t/proprietary/bin/dock_fw_update:system/bin/dock_fw_update \
-    vendor/asus/tf701t/proprietary/bin/dock_gic_fw_update:system/bin/dock_gic_fw_update \
     vendor/asus/tf701t/proprietary/bin/GammaSetting:system/bin/GammaSetting \
     vendor/asus/tf701t/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/asus/tf701t/proprietary/bin/gpslogd:system/bin/gpslogd \
     vendor/asus/tf701t/proprietary/bin/halsel:system/bin/halsel \
     vendor/asus/tf701t/proprietary/bin/halsel.sh:system/bin/halsel.sh \
     vendor/asus/tf701t/proprietary/bin/HSVSetting:system/bin/HSVSetting \
+    vendor/asus/tf701t/proprietary/bin/icera-crashlogs:system/bin/icera-crashlogs \
+    vendor/asus/tf701t/proprietary/bin/icera-loader:system/bin/icera-loader \
+    vendor/asus/tf701t/proprietary/bin/icera_log_serial_arm:system/bin/icera_log_serial_arm \
+    vendor/asus/tf701t/proprietary/bin/icera-switcherd:system/bin/icera-switcherd \
     vendor/asus/tf701t/proprietary/bin/input_cfboost_init.sh:system/bin/input_cfboost_init.sh \
     vendor/asus/tf701t/proprietary/bin/inv_self_test:system/bin/inv_self_test \
     vendor/asus/tf701t/proprietary/bin/loadDriver.sh:system/bin/loadDriver.sh \
@@ -38,10 +41,8 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/bin/nvcgcserver:system/bin/nvcgcserver \
     vendor/asus/tf701t/proprietary/bin/nvtest:system/bin/nvtest \
     vendor/asus/tf701t/proprietary/bin/pad_fw_update:system/bin/pad_fw_update \
-    vendor/asus/tf701t/proprietary/bin/pad_gic_fw_update:system/bin/pad_gic_fw_update \
     vendor/asus/tf701t/proprietary/bin/powerservice:system/bin/powerservice \
     vendor/asus/tf701t/proprietary/bin/raydium_selftest:system/bin/raydium_selftest \
-    vendor/asus/tf701t/proprietary/bin/rild:system/bin/rild \
     vendor/asus/tf701t/proprietary/bin/rm_ts_server:system/bin/rm_ts_server \
     vendor/asus/tf701t/proprietary/bin/scalar_fw_update:system/bin/scalar_fw_update \
     vendor/asus/tf701t/proprietary/bin/set_hwui_params.sh:system/bin/set_hwui_params.sh \
@@ -176,6 +177,7 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/lib/libopencv24_tegra.so:system/lib/libopencv24_tegra.so \
     vendor/asus/tf701t/proprietary/lib/libpowerservice_client.so:system/lib/libpowerservice_client.so \
     vendor/asus/tf701t/proprietary/lib/libpowerservice.so:system/lib/libpowerservice.so \
+    vendor/asus/tf701t/proprietary/lib/libril-icera.so:system/lib/libril-icera.so \
     vendor/asus/tf701t/proprietary/lib/librm31080.so:system/lib/librm31080.so \
     vendor/asus/tf701t/proprietary/lib/librm_ts_service.so:system/lib/librm_ts_service.so \
     vendor/asus/tf701t/proprietary/lib/libsecure_hdcp_up.so:system/lib/libsecure_hdcp_up.so \
@@ -200,6 +202,7 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/lib/hw/gps.tegra.so:system/lib/hw/gps.tegra.so \
     vendor/asus/tf701t/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
     vendor/asus/tf701t/proprietary/lib/hw/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
+    vendor/asus/tf701t/proprietary/lib/hw/keystore.tegra.so:system/lib/hw/keystore.tegra.so \
     vendor/asus/tf701t/proprietary/lib/hw/lights.macallan.so:system/lib/hw/lights.macallan.so \
     vendor/asus/tf701t/proprietary/lib/hw/nfc.tegra.so:system/lib/hw/nfc.tegra.so \
     vendor/asus/tf701t/proprietary/lib/hw/sensors.haydn.so:system/lib/hw/sensors.haydn.so \

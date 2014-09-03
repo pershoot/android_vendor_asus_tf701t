@@ -94,11 +94,15 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/etc/firmware/Splendid/LUT/LUT_W10.txt:system/etc/firmware/Splendid/LUT/LUT_W10.txt \
     vendor/asus/tf701t/proprietary/etc/firmware/tegra11x/nvhost_msenc02.fw:system/etc/firmware/tegra11x/nvhost_msenc02.fw \
     vendor/asus/tf701t/proprietary/etc/firmware/tegra11x/nvhost_tsec.fw:system/etc/firmware/tegra11x/nvhost_tsec.fw \
+    vendor/asus/tf701t/proprietary/etc/hdcpsrm/hdcp1x.srm:system/etc/hdcpsrm/hdcp1x.srm \
+    vendor/asus/tf701t/proprietary/etc/hdcpsrm/hdcp2x.srm:system/etc/hdcpsrm/hdcp2x.srm \
+    vendor/asus/tf701t/proprietary/etc/hdcpsrm/hdcp2xtest.srm:system/etc/hdcpsrm/hdcp2xtest.srm \
     vendor/asus/tf701t/proprietary/etc/oem_profile:system/etc/oem_profile \
     vendor/asus/tf701t/proprietary/lib/libardrv_dynamic.so:system/lib/libardrv_dynamic.so \
     vendor/asus/tf701t/proprietary/lib/libaudioavp.so:system/lib/libaudioavp.so \
     vendor/asus/tf701t/proprietary/lib/libcgdrv.so:system/lib/libcgdrv.so \
     vendor/asus/tf701t/proprietary/lib/libcplconnectclient.so:system/lib/libcplconnectclient.so \
+    vendor/asus/tf701t/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/asus/tf701t/proprietary/lib/libfcamdng.so:system/lib/libfcamdng.so \
     vendor/asus/tf701t/proprietary/lib/libgov_combinator.so:system/lib/libgov_combinator.so \
     vendor/asus/tf701t/proprietary/lib/libgov_cores.so:system/lib/libgov_cores.so \
@@ -174,6 +178,7 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/lib/libnvupdater_jni.so:system/lib/libnvupdater_jni.so \
     vendor/asus/tf701t/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
     vendor/asus/tf701t/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
+    vendor/asus/tf701t/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     vendor/asus/tf701t/proprietary/lib/libopencv24_tegra.so:system/lib/libopencv24_tegra.so \
     vendor/asus/tf701t/proprietary/lib/libpowerservice_client.so:system/lib/libpowerservice_client.so \
     vendor/asus/tf701t/proprietary/lib/libpowerservice.so:system/lib/libpowerservice.so \
@@ -231,4 +236,5 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/asus/tf701t/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/asus/tf701t/proprietary/vendor/lib/hw/power.macallan.so:system/vendor/lib/hw/power.macallan.so \
-    vendor/asus/tf701t/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
+    vendor/asus/tf701t/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/asus/tf701t/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so

@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/bin/rm_ts_server:system/bin/rm_ts_server \
     vendor/asus/tf701t/proprietary/bin/scalar_fw_update:system/bin/scalar_fw_update \
     vendor/asus/tf701t/proprietary/bin/set_hwui_params.sh:system/bin/set_hwui_params.sh \
+    vendor/asus/tf701t/proprietary/bin/test-wvdrmplugin:system/bin/test-wvdrmplugin \
     vendor/asus/tf701t/proprietary/bin/tf_daemon:system/bin/tf_daemon \
     vendor/asus/tf701t/proprietary/bin/ussr_setup.sh:system/bin/ussr_setup.sh \
     vendor/asus/tf701t/proprietary/bin/ussrd:system/bin/ussrd \
@@ -195,6 +196,7 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/lib/libtsec_wrapper.so:system/lib/libtsec_wrapper.so \
     vendor/asus/tf701t/proprietary/lib/libtsechdcp.so:system/lib/libtsechdcp.so \
     vendor/asus/tf701t/proprietary/lib/libussrd.so:system/lib/libussrd.so \
+    vendor/asus/tf701t/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/asus/tf701t/proprietary/lib/egl/libEGL_tegra_impl.so:system/lib/egl/libEGL_tegra_impl.so \
     vendor/asus/tf701t/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
     vendor/asus/tf701t/proprietary/lib/egl/libGLESv1_CM_tegra_impl.so:system/lib/egl/libGLESv1_CM_tegra_impl.so \

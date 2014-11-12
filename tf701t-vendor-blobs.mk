@@ -53,6 +53,7 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/bin/usdwatchdog:system/bin/usdwatchdog \
     vendor/asus/tf701t/proprietary/bin/widevine_install:system/bin/widevine_install \
     vendor/asus/tf701t/proprietary/bin/wifimacwriter:system/bin/wifimacwriter \
+    vendor/asus/tf701t/proprietary/etc/camera/data/config.dat:system/etc/camera/data/config.dat \
     vendor/asus/tf701t/proprietary/etc/camera/persist/camera_overrides_cal.isp:system/etc/camera/persist/camera_overrides_cal.isp \
     vendor/asus/tf701t/proprietary/etc/camera/persist/camera_overrides.isp:system/etc/camera/persist/camera_overrides.isp \
     vendor/asus/tf701t/proprietary/etc/firmware/battery_gauge/mozart_dock_0167.dffs:system/etc/firmware/battery_gauge/mozart_dock_0167.dffs \

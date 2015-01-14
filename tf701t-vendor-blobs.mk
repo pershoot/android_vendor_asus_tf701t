@@ -104,7 +104,6 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/lib/libaudioavp.so:system/lib/libaudioavp.so \
     vendor/asus/tf701t/proprietary/lib/libcgdrv.so:system/lib/libcgdrv.so \
     vendor/asus/tf701t/proprietary/lib/libcplconnectclient.so:system/lib/libcplconnectclient.so \
-    vendor/asus/tf701t/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/asus/tf701t/proprietary/lib/libfcamdng.so:system/lib/libfcamdng.so \
     vendor/asus/tf701t/proprietary/lib/libgov_combinator.so:system/lib/libgov_combinator.so \
     vendor/asus/tf701t/proprietary/lib/libgov_cores.so:system/lib/libgov_cores.so \
@@ -180,7 +179,6 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/lib/libnvupdater_jni.so:system/lib/libnvupdater_jni.so \
     vendor/asus/tf701t/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
     vendor/asus/tf701t/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
-    vendor/asus/tf701t/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     vendor/asus/tf701t/proprietary/lib/libopencv24_tegra.so:system/lib/libopencv24_tegra.so \
     vendor/asus/tf701t/proprietary/lib/libpowerservice_client.so:system/lib/libpowerservice_client.so \
     vendor/asus/tf701t/proprietary/lib/libpowerservice.so:system/lib/libpowerservice.so \
@@ -197,7 +195,6 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/lib/libtsec_wrapper.so:system/lib/libtsec_wrapper.so \
     vendor/asus/tf701t/proprietary/lib/libtsechdcp.so:system/lib/libtsechdcp.so \
     vendor/asus/tf701t/proprietary/lib/libussrd.so:system/lib/libussrd.so \
-    vendor/asus/tf701t/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/asus/tf701t/proprietary/lib/libwfd_source.so:system/lib/libwfd_source.so \
     vendor/asus/tf701t/proprietary/lib/libwfd_common.so:system/lib/libwfd_common.so \
     vendor/asus/tf701t/proprietary/lib/libwfd_sink.so:system/lib/libwfd_sink.so \
@@ -238,6 +235,8 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
     vendor/asus/tf701t/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
     vendor/asus/tf701t/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
+    vendor/asus/tf701t/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
+    vendor/asus/tf701t/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/asus/tf701t/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/asus/tf701t/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/asus/tf701t/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \

@@ -194,9 +194,6 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/lib/libtsec_wrapper.so:system/lib/libtsec_wrapper.so \
     vendor/asus/tf701t/proprietary/lib/libtsechdcp.so:system/lib/libtsechdcp.so \
     vendor/asus/tf701t/proprietary/lib/libussrd.so:system/lib/libussrd.so \
-    vendor/asus/tf701t/proprietary/lib/libwfd_source.so:system/lib/libwfd_source.so \
-    vendor/asus/tf701t/proprietary/lib/libwfd_common.so:system/lib/libwfd_common.so \
-    vendor/asus/tf701t/proprietary/lib/libwfd_sink.so:system/lib/libwfd_sink.so \
     vendor/asus/tf701t/proprietary/lib/egl/libEGL_tegra_impl.so:system/lib/egl/libEGL_tegra_impl.so \
     vendor/asus/tf701t/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
     vendor/asus/tf701t/proprietary/lib/egl/libGLESv1_CM_tegra_impl.so:system/lib/egl/libGLESv1_CM_tegra_impl.so \

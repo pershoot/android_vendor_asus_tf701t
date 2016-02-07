@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES := \
     vendor/asus/tf701t/proprietary/bin/ussr_setup.sh:system/bin/ussr_setup.sh \
     vendor/asus/tf701t/proprietary/bin/ussrd:system/bin/ussrd \
     vendor/asus/tf701t/proprietary/bin/usdwatchdog:system/bin/usdwatchdog \
-    vendor/asus/tf701t/proprietary/bin/widevine_install:system/bin/widevine_install \
     vendor/asus/tf701t/proprietary/bin/wifimacwriter:system/bin/wifimacwriter \
     vendor/asus/tf701t/proprietary/etc/camera/data/config.dat:system/etc/camera/data/config.dat \
     vendor/asus/tf701t/proprietary/etc/camera/persist/camera_overrides_cal.isp:system/etc/camera/persist/camera_overrides_cal.isp \
